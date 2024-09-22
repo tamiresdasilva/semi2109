@@ -66,6 +66,8 @@ public class Ordenacao {
         return new int[] {comparacoes, trocas};
     }
 
+    //Preciso ajustar merge e quick
+
     public static void mergeSort(int[] array, int inicio, int fim){
         int n = array.length;
 
@@ -154,7 +156,7 @@ public class Ordenacao {
     public static int[] gerarArrayOrdenadoInversamente(int tamanho) {
         int[] array = new int[tamanho];
         for (int i = 0; i < tamanho; i++) {
-            array[i] = tamanho - i - 1; // Gera de 99 a 0
+            array[i] = tamanho - i - 1;
         }
         return array;
     }
